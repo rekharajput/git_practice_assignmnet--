@@ -1,21 +1,23 @@
-function checkprime(n)
+function checkprime(nums)
 {
 let factor=0;
 
-FOR(let i=1;i<=n;i--)
+for(let i=1;i<=num;i++)
 {
 if(num%i==0)
 {
-factor+;
+factor++;
 }
-if(factor==1)
-{
-return false;
 }
-else
+if(factor==2)
 {
 return true;
 }
+else
+{
+return false;
+}
 
 }
-checkprime(22);
+
+console.log(checkprime(7));
